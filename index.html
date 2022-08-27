@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+   
+
+</head>
+
+
+
+<body>
+    <main class="row">
+
+        <aside class="col-3 " >
+                <h1 class="m-3 ">Add New Course</h1>
+                
+                <form class="m-3 w-100" METHOD="POST" onsubmit="return subform();">
+                    <div class="container mt-3">
+                        <label class="form-label" for="n-course">Name of Course:</label>
+                        <input class="form-control" id="n-course" type="text" name="nameofcourse">
+                    </div>
+    
+                    <div class="container mt-3">
+                        <label class="form-label" for="n-doctor">Name of Doctor:</label>
+                        <input class="form-control" id="n-doctor" type="text" name="nameofdoctor">
+                    </div>
+    
+                    <div class="container mt-3">
+                        <label for="se-level">Difficulty level:</label>
+                        <div class="mt-3" id="se-level">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
+                                <label class="form-check-label" for="Radios1"> easy</label>
+                            </div>
+    
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+                                <label class="form-check-label" for="Radios2">Meduim</label>
+                            </div>
+    
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios3" value="option3" >
+                                <label class="form-check-label" for="Radios3">Hard</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                
+                    <div class="mt-4 d-flex justify-content-start ">
+                        <input class="w-25 bg-success text-white" type="submit" value="Submit">
+                        <span><pre>  </pre></span>
+                        <input class="w-25 bg-danger text-white" type="reset" value="Rest">                 
+                    </div>
+                </form>
+          
+          
+    
+
+        </aside>
+            
+
+
+        <!--  another side -->
+
+        <section class="col-8 m-3">
+            <h1 class="mt-1"> My courses </h1>
+            <table class="table mt-5 table-bordered border-dark">
+                <thead class="table-dark text-center">
+                  <tr>
+                    <th>ID of Course</th>
+                    <th>Name of Course</th>
+                    <th>Name of Doctor</th>
+                    <th>Difficulty level</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td class="id">1</td>
+                    <td>Data structure</td>
+                    <td>Radi Jarar</td>
+                    <td>Hard</td>
+                  </tr>
+                  <tr>
+                    <td class="id">2</td>
+                    <td>Data Base</td>
+                    <td>Basem Syrafi</td>
+                    <td>Meduim</td>
+                  </tr>
+                  <tr>
+                    <td class="id">3</td>
+                    <td>Software Engineering</td>
+                    <td>Samer Zein</td>
+                    <td>easy</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </section>
+
+    </main>
+    </nav>
+       
+
+
+
+
+   
+
+    <script src="main.js"></script>
+</body>
+</html>
